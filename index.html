@@ -135,7 +135,39 @@
             text-align: center;
             padding: 25px;
         }
+/* ABOUT + SKILLS */
 
+.about-content {
+    max-width: 700px;
+    margin: auto;
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 700px;
+    margin: 30px auto 0;
+}
+
+.skill-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    font-weight: bold;
+    color: #111827;
+}
+
+.skill-card span {
+    display: block;
+    color: #2563eb;
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: normal;
+}
         /* MOBILE */
         @media (max-width: 600px) {
 
@@ -208,6 +240,7 @@
         <ul class="menu" id="menu">
             <li><a href="#home" onclick="closeMenu()">Home</a></li>
             <li><a href="#about" onclick="closeMenu()">About</a></li>
+            <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
             <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
         </ul>
     </nav>
@@ -223,16 +256,64 @@
 
         <a href="#about" class="button">Explore</a>
     </section>
+<!-- ABOUT -->
 
-    <!-- ABOUT -->
-    <section class="section" id="about">
-        <h2>About Me</h2>
+<section class="section" id="about">
+    <h2>About Me</h2>
+
+    <div class="about-content">
+        <p>
+            Hi, I'm Ranjan. I'm interested in technology, coding,
+            artificial intelligence and building useful things on the web.
+        </p>
 
         <p>
-            This website is one of my first projects built with
-            HTML and CSS and hosted using GitHub Pages.
+            I'm currently learning web development and programming
+            step by step. This website is part of my journey to
+            improve my skills and create real projects.
         </p>
-    </section>
+    </div>
+</section>
+
+<!-- SKILLS -->
+
+<section class="section" id="skills">
+    <h2>My Skills</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            HTML
+            <span>Web structure</span>
+        </div>
+
+        <div class="skill-card">
+            CSS
+            <span>Web design</span>
+        </div>
+
+        <div class="skill-card">
+            Python
+            <span>Programming</span>
+        </div>
+
+        <div class="skill-card">
+            GitHub
+            <span>Code hosting</span>
+        </div>
+
+        <div class="skill-card">
+            AI
+            <span>Learning & experimenting</span>
+        </div>
+
+        <div class="skill-card">
+            Prompt Engineering
+            <span>AI prompting</span>
+        </div>
+
+    </div>
+</section>
 
     <!-- CONTACT -->
     <section class="section" id="contact">
