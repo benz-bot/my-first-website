@@ -168,6 +168,39 @@
     margin-top: 8px;
     font-weight: normal;
 }
+        /* CONTACT BUTTONS */
+
+.contact-content {
+    max-width: 700px;
+    margin: auto;
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
         /* MOBILE */
         @media (max-width: 600px) {
 
@@ -316,13 +349,46 @@
 </section>
 
     <!-- CONTACT -->
-    <section class="section" id="contact">
-        <h2>Contact</h2>
+<section class="section" id="contact">
+
+    <h2>Contact</h2>
+
+    <div class="contact-content">
 
         <p>
-            More contact information will be added here later.
+            Want to connect with me?
+            You can reach me through the links below.
         </p>
-    </section>
+
+        <div class="contact-buttons">
+
+            <a
+                href="mailto:userandomid@gmail.com"
+                class="contact-button">
+                📧 Email
+            </a>
+
+            <a
+                href="https://github.com/benz-bot"
+                class="contact-button"
+                target="_blank"
+                rel="noopener noreferrer">
+                💻 GitHub
+            </a>
+
+            <a
+                href="https://instagram.com/ranjannath864"
+                class="contact-button"
+                target="_blank"
+                rel="noopener noreferrer">
+                📷 Instagram
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
     <!-- FOOTER -->
     <footer>
